@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米金融</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .nav-big {
+            min-width: 1500px;
+            height: 50px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+        .left {
+            display: inline-block;
+            width: 1500px;
+            margin: 0 auto;
+            /* background-color: chartreuse; */
+        }
+        .left a,
+        .left span {
+            color: white;
+            line-height: 40px;
+            font-size: 13px;
+            text-decoration: none;
+        }
+        .left a:hover{
+            color:red;
+        }
+        .nav-small {
+            width: 1500px;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-jinrong img {
+            width: 70px;
+            height: 70px;
+        }
+        .nav-zuo {
+            display: inline-block;
+            margin: 0;
+            position: relative;
+            top: -8px;
+        }
+        .nav-you {
+            position: relative;
+            top: 25px;
+        }
+        .nav-you a {
+            text-decoration: none;
+            font-size: 26px;
+            color: black;
+            font-family: 黑体;
+            margin-left: 25px;
+
+        }
+        .nav-you a:hover{
+            color:red;
+        }
+        main {
+            min-width: 1500px;
+            height: 800px;
+            background-image: url(img/beijing.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+        section {
+            width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+            /* border: 1px solid darkcyan; */
+        }
+        .wenzi {
+            padding-top: 220px;
+            font-size: 80px;
+            font-family: 黑体;
+            color: white;
+            text-align: center;
+        }
+        .app {
+            width: 500px;
+            height: 80px;
+            margin: 50px auto;
+            border-radius: 10px;
+            background-color: #f93f2b;
+        }
+        .app p {
+            position: relative;
+            top: 25px;
+            text-align: center;
+            font-size: 30px;
+            font-family: 黑体;
+            color: white;
+        }
+        .liaojie {
+            width: 1500px;
+            height: 530px;
+            background-color: white;
+            border: 1px solid rgb(207, 206, 206);
+            margin: 0 auto;
+            margin-top: -100px;
+        }
+        .yanse {
+            width: 450px;
+            height: 200px;
+            font-family: 黑体;
+            margin-left: 32px;
+            margin-top: 30px;
+            display: inline-block;
+        }
+        .caifu {
+            background-color: #faa338;
+        }
+        .daikuan {
+            background-color: #548dd0;
+        }
+        .baoxian {
+            background-color: #76c6ab;
+        }
+        .xiangqing {
+            font-size: 20px;
+            color: #f93f2b;
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #caifu {
+            font-size: 40px;
+            color: white;
+            position: relative;
+            top: 40px;
+            left: 40px;
+        }
+        .pingtai {
+            margin: 0 auto;
+            margin-top: 150px;
+            width: 380px;
+            border: 1px solid transparent;
+            border-bottom-color: rgb(207, 206, 206);
+        }
+        .pingtai a {
+            display: block;
+            font-size: 20px;
+            padding-bottom: 15px;
+        }
+        footer {
+            width: 1500px;
+            margin: 100px auto 50px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .lef{
+            width: 800px;
+            display: inline-block;
+        }
+        .lef img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .jiesu {
+            display: inline-block;
+            position: relative;
+            top: -10px;
+            color: gray;
+            font-family: 黑体;
+        }
+        .righ{
+            display: inline-block;
+            position: relative;
+            top:-15px;
+        }
+         .righ p:nth-child(1){
+           color:gray;
+           font-family: 黑体;
+        }
+        .righ p:nth-child(2){
+            color:#f93f2b;
+            font-size: 30px;
+            font-family: 黑体;
+            margin:5px 0;
+        }
+        .righ p:nth-child(3){
+             color:gray;
+             font-size: 14px;
+             font-family: 黑体;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-big">
+        <div class="left">
+            <a href="">小米网</a>
+            <span>|</span>
+            <a href="">MIUI</a>
+            <span>|</span>
+            <a href="">米聊</a>
+            <span>|</span>
+            <a href="">游戏</a>
+            <span>|</span>
+            <a href="">多看阅读</a>
+            <span>|</span>
+            <a href="">云服务</a>
+            <span>|</span>
+            <a href="">小米网移动版</a>
+            <a href="" style="margin-left:996px;">登录</a>
+            <span>|</span>
+            <a href="">注册</a>
+        </div>
+    </nav>
+    <nav class="nav-small">
+        <div class="nav-jinrong">
+            <img src="img/jinrong.jpg" alt="">
+            <div class="nav-zuo">
+                <p style="font-size: 40px;font-family:黑体">小米金融</p>
+                <p style="color:gray;font-size:14px;text-align:center;">小米家的综合理财平台</p>
+            </div>
+        </div>
+        <div class="nav-you">
+            <a href="">首页</a>
+            <a href="">财富</a>
+            <a href="">贷款</a>
+            <a href="">资产</a>
+            <a href="">社区</a>
+            <a href="">客户端</a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <p class="wenzi">小米用科技畅想金融</p>
+            <div class="app">
+                <p>下载小米金融APP</p>
+            </div>
+        </section>
+    </main>
+    <div class="liaojie">
+        <div class="caifu yanse">
+            <div id="caifu">
+                <p style="margin-bottom:15px;">财富</p>
+                <p>新手最高领888元</p>
+            </div>
+            <div class="pingtai">
+                <a style="color:#ec8210">小米官方 <span style="color: gray;">| 米家的综合财富平台</span></a>
+                <a style="color:#ec8210">安全可靠 <span style="color: gray;">| 严控资金，多重风控审核</span></a>
+                <a style="color:#ec8210 ;margin-bottom:30px;">优质产品 <span style="color: gray;">| 知名合作伙伴，精选理财产品</span></a>
+            </div>
+            <a class="xiangqing">了解更多 ></a>
+        </div>
+        <div class="daikuan yanse">
+            <div id="caifu">
+                <p style="margin-bottom:15px;">贷款</p>
+                <p>一分钟放贷</p>
+            </div>
+            <div class="pingtai">
+                <a style="color:#548dd0">借还灵活 <span style="color: gray;">| 最高20万，随借随还</span></a>
+                <a style="color:#548dd0">极速放贷 <span style="color: gray;">| 最快1分钟到账</span></a>
+                <a style="color:#548dd0 ;margin-bottom:30px;">超低利率 <span style="color: gray;">| 日息万2起，按日计息</span></a>
+            </div>
+            <a class="xiangqing">了解更多 ></a>
+        </div>
+        <div class="baoxian yanse">
+            <div id="caifu">
+                <p style="margin-bottom:15px;">贷款</p>
+                <p>一分钟放贷</p>
+            </div>
+            <div class="pingtai">
+                <a style="color:#76c6ab">借还灵活 <span style="color: gray;">| 最高20万，随借随还</span></a>
+                <a style="color:#76c6ab">极速放贷 <span style="color: gray;">| 最快1分钟到账</span></a>
+                <a style="color:#76c6ab ;margin-bottom:30px;">超低利率 <span style="color: gray;">| 日息万2起，按日计息</span></a>
+            </div>
+            <a class="xiangqing">下载小米金融APP ></a>
+        </div>
+    </div>
+    <footer>
+        <div class="lef">
+            <img src="img/jinrong.jpg" alt="">
+            <div class="jiesu">
+                <p>帮助中心 | 关注我们 | 新浪微博</p>
+                <p>Copyright &copy mi.com 京ICP备10046444号-7<span>|</span>京公网安备 11010802020134号<span>|</span>京ICP证110507号
+                </p>
+            </div>
+        </div>
+        <div class="righ">
+            <p>客服电话</p>
+            <p>400-100-3399</p>
+            <p>周一至周日 9:00-19:00(仅收市话费)</p>
+        </div>
+    </footer>
+</body>
+
+</html>
